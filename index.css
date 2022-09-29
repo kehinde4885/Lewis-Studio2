@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'ButlerStencil';
+    src:url('/ButlerStencil/ButlerStencil.ttf.woff') format('woff'),
+        url('/ButlerStencil/ButlerStencil.ttf.svg#ButlerStencil') format('svg'),
+        url('/ButlerStencil/ButlerStencil.ttf.eot'),
+        url('/ButlerStencil/ButlerStencil.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Use Variables at the End*/
+:root{
+    --bgcolor-pry: #2c1a6a;
+    --bgcolor-sec: #331D7F;
+    --bgcolor-ter: #fff;
+    --bgcolor-ter2: #23272B;
+    --font-pry: 'Karla', sans-serif;
+    --font-sec: 'Abril fatface',cursive;
+    --font-ter: 'Libre Bodoni', serif;
+    --text-black: #000;
+    --text-white: #fff;
+    --text-orange: #ff9000;
+    --text-orange2: #f48824;
+    --text-blue: #007bff;
+    --text-grey: #999;
+}
+
+/*styles Reset*/
+*, *::after , *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5% /* Font Size = 10px (1rem relative to elements within)*/
+}
+
+
+/* utility */
+.font2x {
+    font-size: 2rem;
+}
+
+.ingrid {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+}
+
+.outgrid{
+    display: grid;
+    grid-template-columns: [left]2fr [center]6fr [right]2fr;
+    grid-template-rows: 10em ;
+    grid-template-areas: 
+    "a b c"
+    "d b e"
+}
+
+h1{
+    font-family: 'ButlerStencil';
+    font-size: 5rem;
+}
