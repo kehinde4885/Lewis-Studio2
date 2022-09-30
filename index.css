@@ -15,8 +15,8 @@
     --bgcolor-ter: #fff;
     --bgcolor-ter2: #23272B;
     --font-pry: 'Karla', sans-serif;
-    --font-sec: 'Abril fatface',cursive;
-    --font-ter: 'Libre Bodoni', serif;
+    --font-sec: 'Libre Baskerville', serif;
+    --font-ter: 'ButlerStencil';
     --text-black: #000;
     --text-white: #fff;
     --text-orange: #ff9000;
@@ -34,6 +34,10 @@
 
 html{
     font-size: 62.5% /* Font Size = 10px (1rem relative to elements within)*/
+}
+
+li{
+    list-style: none;
 }
 
 
@@ -56,7 +60,77 @@ html{
     "d b e"
 }
 
-h1{
-    font-family: 'ButlerStencil';
-    font-size: 5rem;
+.uppercase{
+    text-transform: uppercase;
+}
+
+/*Layout*/
+
+body{
+    display: grid;
+    grid-template-columns: 3.5vw 10fr 3.5vw;
+    grid-template-rows: 10vh 10fr 10vh;
+    grid-template-areas: 
+      ". head ."
+      "sl main sr"
+      ". foot ." ;
+    height: 100vh;
+}
+
+main{
+    grid-row: 1/ span 3;
+    grid-column:1 / span 3;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+}
+
+.header {
+    grid-area: head;
+    z-index: 5;
+    display: flex;
+}
+
+.footer{
+    grid-area: foot;
+    z-index: 5;
+}
+
+section {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 3.5vw 2fr 6fr 2fr 3.5vw;
+    grid-template-rows: 10vh 10fr 10vh;
+    grid-template-areas: 
+      ". . . . ."
+      ". . main . ."
+      ". . . . ." ;
+}
+
+.section1{
+    z-index: 4;
+    background-image: url('/images/bg-piling1-1920x1080.jpg');
+    color: var(--text-white);
+}
+
+.section2{
+    z-index: 3;
+    
+}
+
+.section3{
+    z-index: 2;
+}
+
+.section4{
+    z-index: 1;
+}
+
+.section5{
+    z-index: 0;
+}
+
+.wrapper {
+    grid-area: main;
 }
