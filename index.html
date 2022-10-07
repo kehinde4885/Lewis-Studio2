@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lewis Studio 2</title>
+    <script src="https://kit.fontawesome.com/bcf6a19f3a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -16,45 +17,65 @@
 </head>
 
 <body>
-
-    <header class="header">
-        <div>LW Crafting Digital Studio</div>
-        <div>
+    <header class="header font2x flex">
+        <div class="flex"><span>LW</span><span>Crafting Digital Studio</span></div>
+        <div class="flex">
             <p>+96 56-85-1379</p>
             <p>contact@lewisstudio.com</p>
         </div>
-        <div class="menu"></div>
+        <div class="menu">
+            <button> MENU<i class="fa-solid fa-bars"></i></button>
+        </div>
     </header>
-
 
     <!-- header moved down for z-index stacking Purposes. Should still be semantic -->
     <!-- Body Grid Items -->
     <main> 
         <section class="section1">
-            <div class="wrapper">
-                <h1><span>Ideas</span>
-                    Come from the Natural</h1>
-                <p class="uppercase">Branding & Interaction</p>
-                <p>We create high quality products to keep your life interested & better</p>
-
+            <div class="wrapper tit-blk font2x">
+                <h1><span>Ideas</span><br>
+                    Come from Natural</h1>
+                <div>
+                    <p class="uppercase">Branding & Interaction</p>
+                    <p class="grey">We create high quality products to keep your life interested & better</p>
+                </div>
+                <div class="playbtn center">
+                    <i class="fa-solid fa-play"></i>
+                </div>
             </div>
         </section>
         <section class="section2">
-            <div class="wrapper">
-                <div>
+            <div class="wrapper font2x">
+                <div class="yrs mask">
                     <h1>25</h1>
                     <p class="uppercase">Years Experience</p>
                 </div>
-                <div>
-                    <h2>Best Solution for buisness & Start-up</h2>
-                    <p>Grapphic & Branding</p>
-                    <p>UI/ UX Interaction</p>
-                    <p>Motion Video</p>
+                <div class="exp-info">
+                    <h2>Best Solution for buisness & start-up</h2>
+                    <details>
+                        <summary>Graphic & Branding</summary>
+                        Designing for an optimal digital experience. 
+                        intuitive and user friendly. Our websites, platforms and apps are built 
+                        for the way your users behave to ensure an experience that will make them come back for more....
+                    </details>
+                    <details>
+                        <summary>UI/UX Interaction</summary>
+                        Designing for an optimal digital experience. 
+                        intuitive and user friendly. Our websites, platforms and apps are built 
+                        for the way your users behave to ensure an experience that will make them come back for more....
+                    </details>
+                    <details>
+                        <summary>Motion Video</summary>
+                        Designing for an optimal digital experience. 
+                        intuitive and user friendly. Our websites, platforms and apps are built 
+                        for the way your users behave to ensure an experience that will make them come back for more....
+                    </details>
+                    
                 </div>
             </div>
         </section>
         <section class="section3">
-            <div class="wrapper">
+            <div class="wrapper font2x projects">
                 <h3 class="uppercase"> Latest Projects</h3>
                 <ul>
                     <li>
@@ -62,88 +83,96 @@
                         <p class="uppercase">2018 / Interaction</p>
                     </li>
                     <li>
-                        <p>Borantino Skate</p>
+                        <p>Rick Meyers</p>
+                        <p class="uppercase">2018 / Branding</p>
+                    </li>
+                    <li>
+                        <p> ICO bottle Opener</p>
+                        <p class="uppercase">2018 / Branding</p>
+                    </li>
+                    <li>
+                        <p>Onne Portfolio</p>
                         <p class="uppercase">2018 / Interaction</p>
                     </li>
                     <li>
-                        <p>Borantino Skate</p>
-                        <p class="uppercase">2018 / Interaction</p>
+                        <p>Dark Bottle</p>
+                        <p class="uppercase">2017 / Branding</p>
                     </li>
-                    <li>
-                        <p>Borantino Skate</p>
-                        <p class="uppercase">2018 / Interaction</p>
-                    </li>
-                    <li>
-                        <p>Borantino Skate</p>
-                        <p class="uppercase">2018 / Interaction</p>
-                    </li>
-                    <li>
-                        <p>Borantino Skate</p>
-                        <p class="uppercase">2018 / Interaction</p>
+                    <li class="center">
+                        <p class="uppercase">More Projects</p>
                     </li>
                 </ul>
             </div>
         </section>
         <section class="section4">
-            <div class="wrapper">
+            <div class="wrapper clients font2x">
                 <div>
                     <h2>Trusted from Clients</h2>
                     <p>Help buisness can be optimized for profit and improve list of our options</p>
                 </div>
                 <ul class="ptimages">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-        </section>
-        <section class="section4">
-            <div class="wrapper">
-                <div class="quotes"></div>
-                <ul>
-                    <li>
-                        <p>I dont know what else to say. This is something
-                            you havent seen before.
-                            Unique design, lightweight and outstanding support
-                        </p>
-                        <p class="uppercase">Roberto Firmino</p>
-                        <p class="info">Product Management <span>at</span> invision inc </p>
-                    </li>
-                    <li>
-                        <p>I dont know what else to say. This is something
-                            you havent seen before.
-                            Unique design, lightweight and outstanding support
-                        </p>
-                        <p class="uppercase">Roberto Firmino</p>
-                        <p class="info">Product Management <span>at</span> invision inc </p>
-                    </li>
-                    <li>
-                        <p>I dont know what else to say. This is something
-                            you havent seen before.
-                            Unique design, lightweight and outstanding support
-                        </p>
-                        <p class="uppercase">Roberto Firmino</p>
-                        <p class="info">Product Management <span>at</span> invision inc </p>
-                    </li>
-                    <li>
-                        <p>I dont know what else to say. This is something
-                            you havent seen before.
-                            Unique design, lightweight and outstanding support
-                        </p>
-                        <p class="uppercase">Roberto Firmino</p>
-                        <p class="info">Product Management <span>at</span> invision inc </p>
-                    </li>
+                    <li class="center"><img src="/images/pic12.png" alt=""></li>
+                    <li class="center"><img src="/images/pic13.png" alt=""></li>
+                    <li class="center"><img src="/images/pic14.png" alt=""></li>
+                    <li class="center"><img src="/images/pic15.png" alt=""></li>
+                    <li class="center"><img src="/images/pic16.png" alt=""></li>
+                    <li class="center"><img src="/images/pic17.png" alt=""></li>
+                    <li class="center"><img src="/images/pic19.png" alt=""></li>
+                    <li class="center"><img src="/images/pic20.png" alt=""></li>
+                    <li class="center"><img src="/images/pic21.png" alt=""></li>
+                    <li class="center"><img src="/images/pic22.png" alt=""></li>
                 </ul>
             </div>
         </section>
         <section class="section5">
+            <div class="wrapper font2x test">
+                <div class="quotes center">
+                    <img src="/images/icon-quote.png" alt="">
+                </div>
+                <ul class="tests">
+                    <li>
+                        <p>I don't know what else to say. This is something
+                            you havent seen before.
+                            Unique design, lightweight and outstanding support
+                        </p>
+                        <p class="uppercase">Roberto Firmino</p>
+                        <p class="info">Product Management <span>at</span><em> Invision Inc</em></p>
+                    </li>
+                    <li>
+                        <p>I don't know what else to say. This is something
+                            you havent seen before.
+                            Unique design, lightweight and outstanding support
+                        </p>
+                        <p class="uppercase">Roberto Firmino</p>
+                        <p class="info">Product Management <span>at</span><em> Invision Inc</em></p>
+                    </li>
+                    <li>
+                        <p>I don't know what else to say. This is something
+                            you havent seen before.
+                            Unique design, lightweight and outstanding support
+                        </p>
+                        <p class="uppercase">Roberto Firmino</p>
+                        <p class="info">Product Management <span>at</span><em> Invision Inc</em></p>
+                    </li>
+                    <li>
+                        <p>I don't know what else to say. This is something
+                            you havent seen before.
+                            Unique design, lightweight and outstanding support
+                        </p>
+                        <p class="uppercase">Roberto Firmino</p>
+                        <p class="info">Product Management <span>at</span><em> Invision Inc</em></p>
+                    </li>
+                </ul>
+                <div class="reuse-ind">
+                    <li class="center"><i class="fa-solid fa-circle fa-2xs"></i></li>
+                    <li class="center"><i class="fa-solid fa-circle fa-2xs"></i></li>
+                    <li class="center"><i class="fa-solid fa-circle fa-2xs"></i></li>
+                    <li class="center"><i class="fa-solid fa-circle fa-2xs"></i></li>
+
+                </div>
+            </div>
+        </section>
+        <section class="section6">
             <div class="wrapper">
                 <div>
                     <p><span>New York</span><span class="uppercase">USA</span></p>
@@ -160,16 +189,14 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer font2x flex">    
         <div>
-            <div>
-                <p class="uppercase">Lewis 2022. By Ghost</p>
-            </div>
-            <div class="icons">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <p class="uppercase">© Lewis 2022. By Ghost</p>
+        </div>
+        <div class="icons flex">
+            <span class="flex"><i class="fa-brands fa-facebook-f"></i></span>
+            <span class="flex"><i class="fa-brands fa-twitter"></i></span>
+            <span class="flex"><i class="fa-brands fa-linkedin-in"></i></span>
         </div>
     </footer>
 
