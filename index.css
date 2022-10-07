@@ -146,10 +146,12 @@ section {
     z-index: 1;
     background: url(/images/bg-piling5-1920x1080.jpg);
     color: var(--text-white);
+    display: none;
 }
 
 .section6{
     z-index: 0;
+    background: url(/images/bg-piling6-1920x1080.jpg);
 }
 
 .wrapper {
@@ -473,3 +475,50 @@ color: transparent */
     padding: 1.5em;
 }
 
+/* Section 6 */
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.address p:first-child {
+    font-family: var(--font-sec);
+    font-size: 3em;
+    margin-bottom: .3em;
+}
+
+.address p:first-child span:first-child {
+    color: var(--text-orange2);
+}
+
+.address p:nth-child(2){
+    color: var(--text-grey)
+}
+
+.mail {
+    margin-top: 2em;
+    font-size: 1.7em;
+}
+
+.mail a {
+    color: inherit;
+}
+
+.mail p {
+    margin-top: 1em;
+}
+
+.ctn-btn {
+    background-color: var(--text-orange);
+    display: flex;
+    width: max-content;
+    border-radius: 999px;
+    margin-top: 4em;
+}
+
+.ctn-btn a{
+    text-decoration: none;
+    padding: .7em 1.5em;
+    color: var(--text-white);
+}
