@@ -17,8 +17,6 @@
     --font-pry: 'Karla', sans-serif;
     --font-sec: 'Libre Baskerville', serif;
     --font-ter: 'ButlerStencil';
-    --text-black: #000;
-    --text-white: #fff;
     --text-orange: #ff9000;
     --text-orange2: #f48824;
     --text-blue: #007bff;
@@ -35,7 +33,10 @@
 }
 
 html{
-    font-size: 62.5% /* Font Size = 10px (1rem relative to elements within)*/
+    font-size: 62.5% ;/* Font Size = 10px (1rem relative to elements within)*/
+    --defcolor: #fff;
+    --text-white: #fff;
+    --text-black: #000;
 }
 
 li{
@@ -79,6 +80,8 @@ body{
       ". foot ." ;
     height: 100vh;
     font-family: var(--font-pry);
+    overflow: hidden;
+    color: var(--defcolor);
 }
 
 main{
@@ -142,7 +145,6 @@ section {
     z-index: 1;
     background: url(/images/bg-piling5-1920x1080.jpg);
     color: var(--text-white);
-    display: none;
 }
 
 .section6{
@@ -168,7 +170,6 @@ section {
 
 /* Styling */
 .header {
-    color: var(--text-black);
     justify-content: center;
 }
 
@@ -211,7 +212,6 @@ section {
 /* Break*/
 
 .footer {
-    color: var(--text-black);
     justify-content: space-between;
 }
 
@@ -225,7 +225,7 @@ section {
 .icons span {
     width: 2em;
     height: 2em;
-    border: 1px solid var(--text-black);
+    border: 1px solid var(--defcolor);
     border-radius: 50%;
     justify-content: center;
 }
@@ -256,9 +256,12 @@ section {
 }
 
 .ind li {
-    border: 1px solid var(--text-orange2);
     border-radius: 50%;
     margin-top: 3em;
+}
+
+.indicate{
+    border: 1px solid var(--text-orange)
 }
 
 .ind svg {
@@ -327,6 +330,7 @@ section {
     background-repeat: no-repeat;
     width: 2ch;
     -webkit-background-clip: text , border;
+    background-clip: text;
     color: transparent;
 }
 
@@ -522,6 +526,7 @@ color: transparent */
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: var(--text-black);
 }
 
 .address p:first-child {
